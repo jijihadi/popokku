@@ -1,0 +1,32 @@
+ERROR - 2022-04-10 07:27:53 --> mysqli_sql_exception: Table 'db_popoku.users' doesn't exist in C:\xampp\htdocs\popoku\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\popoku\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\popoku\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\popoku\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\popoku\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\popoku\system\Validation\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\popoku\system\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('muchtamir21@gma...', 'user_email', Array, NULL)
+#6 C:\xampp\htdocs\popoku\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('email', 'email', 'muchtamir21@gma...', Array, Array)
+#7 C:\xampp\htdocs\popoku\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\popoku\app\Controllers\Register.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\popoku\system\CodeIgniter.php(936): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\popoku\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\popoku\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\popoku\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-04-10 07:28:04 --> mysqli_sql_exception: Table 'db_popoku.users' doesn't exist in C:\xampp\htdocs\popoku\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\popoku\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\xampp\htdocs\popoku\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\popoku\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\popoku\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\popoku\system\Validation\Rules.php(212): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\popoku\system\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('muchtamir21@gma...', 'user_email', Array, NULL)
+#6 C:\xampp\htdocs\popoku\system\Validation\Validation.php(164): CodeIgniter\Validation\Validation->processRules('email', 'email', 'muchtamir21@gma...', Array, Array)
+#7 C:\xampp\htdocs\popoku\system\Controller.php(181): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\popoku\app\Controllers\Register.php(26): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\popoku\system\CodeIgniter.php(936): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\popoku\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\popoku\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\popoku\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
